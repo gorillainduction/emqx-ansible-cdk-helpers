@@ -10,6 +10,8 @@
     -e emqx_loadgen_num=20 \
     -e emqx_db_backend=rlog \
     -e emqx_num_cores=1 \
+    -e emqx_persistent_session_store=disabled \
+    -e emqx_persistent_session_store_storage_type=ram \
     tuning.yml
 #+END_SRC
 
